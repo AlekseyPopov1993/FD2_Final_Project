@@ -402,7 +402,7 @@ function playGround () {
     // мяч
 
     const ballImg = new Image();
-    ballImg.src = '../img/ball.png';
+    ballImg.src = 'img/ball.png';
     ctx.drawImage(ballImg, ball.posX - ball.radius, ball.posY - ball.radius, ball.radius*2, ball.radius*2);
 }
     
@@ -1130,19 +1130,6 @@ function congratulations (winner) {
         event.returnValue = '';
     }
 
-    changePage = false;
-    console.log(changePage);
-    function backGame () {
-        console.log(changePage);
-        changePage = confirm('???');
-        console.log(changePage);
-        if (!changePage) {
-            let link = window.location.href + '#game';
-            history.pushState(null, null, link);
-        }
-    }
-
-    // window.addEventListener('hashchange', backGame)
     window.addEventListener('beforeunload', leaveGame)
 
     window.addEventListener('hashchange', () => {

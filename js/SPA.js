@@ -180,7 +180,6 @@ const mySPA = (function() {
     function ModuleController () {
       let myModuleContainer = null;
       let myModuleModel = null;
-      let changePage = true;
 
       this.init = function(container, model) {
         myModuleContainer = container;
