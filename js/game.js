@@ -17,7 +17,7 @@ let options = JSON.parse(sessionStorage.getItem('options'));
 
 // Создание звуковых эффектов касаний мяча и празднований гола:
 
-const touchAudio= new Audio("http://d-gun.com/files/sounds/ARMSML1.WAV")
+const touchAudio= new Audio("http://david.guerrero.free.fr/Effects/DrillImpact.wav")
 const goalAudio= new Audio("https://mrclan.com/fastdl/tfc/sound/cheer.wav")
 const winAudio= new Audio("https://www.talkingwav.com/wp-content/uploads/2017/10/cramer-23.wav")
 
