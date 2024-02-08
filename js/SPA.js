@@ -191,12 +191,9 @@ const mySPA = (function() {
       }
 
       this.updateState = function() {
-        if (changePage) {
-          console.log(changePage);
-          console.log('srb');
+        
           const hashPageName = location.hash.slice(1).toLowerCase();
           myModuleModel.updateState(hashPageName);
-        } 
       }
 
     };
