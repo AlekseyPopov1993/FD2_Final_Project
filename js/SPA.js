@@ -191,9 +191,8 @@ const mySPA = (function() {
       }
 
       this.updateState = function() {
-        
-          const hashPageName = location.hash.slice(1).toLowerCase();
-          myModuleModel.updateState(hashPageName);
+        const hashPageName = location.hash.slice(1).toLowerCase();
+        myModuleModel.updateState(hashPageName);
       }
 
     };
