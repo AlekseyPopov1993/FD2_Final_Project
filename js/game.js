@@ -380,11 +380,11 @@ function playGround () {
     const gkRightPosX = (canvasWidth - fieldWidth)/2 + fieldWidth;
     
     const gkImageLeft = new Image();
-    gkImageLeft.src = 'img/gkleft.png';
+    gkImageLeft.src = './img/gkleft.png';
     ctx.drawImage(gkImageLeft, gkLeftPosX, gkLeftPosY, gkWidth, gkHeight);
 
     const gkImageRight = new Image();
-    gkImageRight.src = 'img/gkright.png';
+    gkImageRight.src = './img/gkright.png';
     ctx.drawImage(gkImageRight, gkRightPosX, gkRightPosY, gkWidth, gkHeight);
 
     // полевые игроки
@@ -402,7 +402,7 @@ function playGround () {
     // мяч
 
     const ballImg = new Image();
-    ballImg.src = 'img/ball.png';
+    ballImg.src = './img/ball.png';
     ctx.drawImage(ballImg, ball.posX - ball.radius, ball.posY - ball.radius, ball.radius*2, ball.radius*2);
 }
     
