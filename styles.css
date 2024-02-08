@@ -1,0 +1,335 @@
+body {
+   margin: 0;
+   background-image: url('img/grass.jpg');
+}
+
+p, button, label, a, table, h4 {
+  font-family: 'Comfortaa', sans-serif;
+}
+
+a {
+  display: inline-block;
+  padding: 10px 5px 0 5px;
+  text-decoration: none;
+  color: black;
+}
+
+h4 {
+  text-align: center;
+  font-size: 32px;
+}
+
+td{
+  padding: 0 30px;
+  text-align: center;
+  margin: 0;
+}
+
+th {
+  text-align: center;
+}
+
+.countdown {
+  font-family: 'Comfortaa', sans-serif;
+  text-align: center;
+  margin: -400px auto 0 auto;
+}
+
+p.rules-text {
+  text-indent: 30px;
+}
+
+button, a {
+  margin: 15px;
+  max-width: 300px;
+  min-height: 30px;
+  border: double 2px black;
+  border-radius: 5px;
+  transition-duration: 1s;
+  background-color: rgb(255, 255, 69);
+}
+
+button:hover, a:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+  box-shadow: 3px 3px gold;
+}
+
+.menu {
+  box-sizing: border-box;
+  margin: 0;
+  background-size:100% 100%;
+  min-height:737px;
+  padding: 50px;
+}
+
+
+.game {
+  display: block;
+  background-size:100% 100%;
+  min-height:737px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+input.radio {
+  margin-right: 20px;
+}
+
+.info {
+  border: solid 2px black;
+  border-radius: 15px;
+  margin: auto;
+  padding: 10px;
+  background: linear-gradient(60deg, blue, white, red);
+  min-height:200px;
+  max-width: 500px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.records-menu  {
+  max-width: fit-content;
+  min-width: 900px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.records-menu .info {
+  max-width: fit-content;
+}
+
+input.input-name {
+  border-radius: 20px;
+  text-align: center;
+}
+
+.left-player {
+  margin: 0 auto;
+  background: url(/img/blue.png) 0 0 no-repeat;
+  position: absolute;
+  background-size: cover;
+}
+
+.right-player {
+  margin: 0 auto;
+  background: url(/img/red.png) 0 0 no-repeat;
+  transform: scaleX(-1);
+  position: absolute;
+  background-size: cover;
+  }
+
+.gk-right {
+  transform: scaleX(-1);
+}
+
+.left {
+  transform: scaleX(-1);
+}
+
+.right {
+  transform: none;
+}
+
+.up {
+  transform: rotate(-90deg);
+}
+
+.down {
+  transform: rotate(90deg);
+}
+
+.message {
+  color: gold;
+  text-align:center;
+}
+
+.run-player {
+  animation: run-player .8s infinite step-end;
+}
+
+@keyframes run-player {
+  0% {
+    background-position: 0 0;
+  }
+  12.5% {
+    background-position: -160px 0;
+  }
+  25% {
+    background-position: -320px 0;
+  }
+  37.5% {
+    background-position: -480px 0;
+  }
+  50% {
+    background-position: 0 0;
+  }
+  62.5% {
+    background-position: -160px 0;
+  }
+  75% {
+    background-position: -320px 0;
+  }
+  87.5% {
+    background-position: -480px 0;
+  }
+}
+
+#congratsImg {
+  max-width: 320px;
+  object-fit: cover;
+  animation: cup-animation .8s  step-end;
+}
+
+@keyframes cup-animation {
+  0% {
+    max-width: 0;
+  }
+  6.25% {
+    max-width: 20px;
+  }
+  12.5% {
+    max-width: 40px;
+  }
+  18.25% {
+    max-width: 60px;
+  }
+  25% {
+    max-width: 80px;
+  }
+  31.25% {
+    max-width: 100px;
+  }
+  37.5% {
+    max-width: 120px;
+  }
+  43.75% {
+    max-width: 140px;
+  }
+  50% {
+    max-width: 160px;
+  }
+  56.25% {
+    max-width: 180px;
+  }
+  62.5% {
+    max-width: 200px;
+  }
+  68.75% {
+    max-width: 220px;
+  }
+  75% {
+    max-width: 240px;
+  }
+  81.25% {
+    max-width: 260px;
+  }
+  87.5% {
+    max-width: 280px;
+  }
+  93.75% {
+    max-width: 300px;
+  }
+  100% {
+    max-width: 320px;
+  }
+}
+
+.sound-on {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  background: url(/img/soundOn.png) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.sound-off {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  background: url(/img/soundOff.png) 0 0 no-repeat;
+  background-size: cover;
+}
+
+#scoreboardGameInfo > p {
+  margin: 2px;
+}
+
+#scoreboardGameInfo > button {
+  margin: 2px;
+}
+
+#SoundLogo:hover {
+  cursor: pointer;
+}
+
+#scoreboard {
+  background-color: silver;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-image: url('img/board.jpg');
+  background-size: cover;
+}
+
+#game {
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#leftPlayerName {
+  color: blue;
+  font-size: 24px;
+  margin: 10px;
+}
+
+#leftPlayerCount {
+  font-size: 40px;
+  margin: 0;
+  color: blue;
+}
+
+#rightPlayerCount {
+  font-size: 40px;
+  margin: 0;
+  color: red;
+}
+
+#rightPlayerName {
+  color: red;
+  font-size: 24px;
+  margin: 10px;
+}
+
+#canvas {
+  max-width: 1280px;
+}
+
+#goal {
+  object-fit: cover;
+  position: absolute;
+}
+
+#winner {
+  text-align: center;
+  margin: -500px auto 0 auto;
+}
