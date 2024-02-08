@@ -1,6 +1,6 @@
 body {
    margin: 0;
-   background-image: url('img/grass.jpg');
+   background-image: url('../img/grass.jpg');
 }
 
 p, button, label, a, table, h4 {
@@ -122,14 +122,14 @@ input.input-name {
 
 .left-player {
   margin: 0 auto;
-  background: url(/img/blue.png) 0 0 no-repeat;
+  background: url(../img/blue.png) 0 0 no-repeat;
   position: absolute;
   background-size: cover;
 }
 
 .right-player {
   margin: 0 auto;
-  background: url(/img/red.png) 0 0 no-repeat;
+  background: url(../img/red.png) 0 0 no-repeat;
   transform: scaleX(-1);
   position: absolute;
   background-size: cover;
@@ -255,7 +255,7 @@ input.input-name {
   margin: 0 auto;
   width: 30px;
   height: 30px;
-  background: url(/img/soundOn.png) 0 0 no-repeat;
+  background: url(../img/soundOn.png) 0 0 no-repeat;
   background-size: cover;
 }
 
@@ -263,7 +263,7 @@ input.input-name {
   margin: 0 auto;
   width: 30px;
   height: 30px;
-  background: url(/img/soundOff.png) 0 0 no-repeat;
+  background: url(../img/soundOff.png) 0 0 no-repeat;
   background-size: cover;
 }
 

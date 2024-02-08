@@ -380,11 +380,11 @@ function playGround () {
     const gkRightPosX = (canvasWidth - fieldWidth)/2 + fieldWidth;
     
     const gkImageLeft = new Image();
-    gkImageLeft.src = "/img/gkleft.png";
+    gkImageLeft.src = "../img/gkleft.png";
     ctx.drawImage(gkImageLeft, gkLeftPosX, gkLeftPosY, gkWidth, gkHeight);
 
     const gkImageRight = new Image();
-    gkImageRight.src = "/img/gkright.png";
+    gkImageRight.src = "../img/gkright.png";
     ctx.drawImage(gkImageRight, gkRightPosX, gkRightPosY, gkWidth, gkHeight);
 
     // полевые игроки
