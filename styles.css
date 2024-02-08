@@ -1,6 +1,6 @@
 body {
    margin: 0;
-   background-image: url('../img/grass.jpg');
+   background-image: url('img/grass.jpg');
 }
 
 p, button, label, a, table, h4 {
