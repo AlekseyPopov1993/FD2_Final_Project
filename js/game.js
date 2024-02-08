@@ -402,7 +402,7 @@ function playGround () {
     // мяч
 
     const ballImg = new Image();
-    ballImg.src = "img/ball.png";
+    ballImg.src = "..img/ball.png";
     ctx.drawImage(ballImg, ball.posX - ball.radius, ball.posY - ball.radius, ball.radius*2, ball.radius*2);
 }
     
