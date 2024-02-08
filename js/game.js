@@ -432,6 +432,7 @@ document.addEventListener("keyup", function(event) {
 
 let playersSpeed = 3;
 
+
 let timer1;
 let timer2;
 
