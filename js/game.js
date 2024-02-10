@@ -432,7 +432,6 @@ document.addEventListener("keyup", function(event) {
 
 let playersSpeed = 3;
 
-
 let timer1;
 let timer2;
 
@@ -1126,6 +1125,7 @@ function congratulations (winner) {
     setTimeout(() => {window.history.back()}, 4000);
 }
 
+    // Предупреждение о потере данных при перезагрузке страницы:
     function leaveGame (event) {
         event.preventDefault();
         event.returnValue = '';

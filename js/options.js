@@ -1,5 +1,3 @@
-// 'use strict'
-
 (function () {
 
     const saveOptionsBtn = document.querySelector('#save_options');
